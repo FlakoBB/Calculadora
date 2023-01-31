@@ -60,4 +60,18 @@ body {
   background-color: darkorange;
 }
 
+#operacion {
+  text-align: end;
+  width: 100%;
+  font-size: 2.5rem;
+  resize: none;
+}
+
+#total {
+  text-align: end;
+  width: 100%;
+  font-size: 2rem;
+  resize: none;
+}
+
 /*# sourceMappingURL=style.css.map */
