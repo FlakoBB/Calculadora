@@ -1,0 +1,40 @@
+@mixin boton {
+    border-radius: 2rem;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.btn-num {
+    @include boton;
+    background-color: antiquewhite;
+
+    &:hover {
+        cursor: pointer;
+        background-color: greenyellow;
+    }
+}
+
+.btn-op {
+    @include boton;
+    background-color: cadetblue;
+
+    &:hover {
+        cursor: pointer;
+        background-color: coral;
+    }
+}
+
+.btn-igual {
+    border-radius: 2rem;
+    padding: 3.2rem 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: crimson;
+    color: antiquewhite;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darkorange;
+    }
+}

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.contenedor .calcu {
+  background-color: black;
+  width: 30rem;
+  height: 35rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.btn-num {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: antiquewhite;
+}
+.btn-num:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.btn-op {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: cadetblue;
+}
+.btn-op:hover {
+  cursor: pointer;
+  background-color: coral;
+}
+
+.btn-igual {
+  border-radius: 2rem;
+  padding: 3.2rem 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: crimson;
+  color: antiquewhite;
+}
+.btn-igual:hover {
+  cursor: pointer;
+  background-color: darkorange;
+}
+
+/*# sourceMappingURL=style.css.map */
