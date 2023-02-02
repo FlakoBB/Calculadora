@@ -1,4 +1,4 @@
-// import {sumar} from './operaciones'
+// import {sumar, restar, multiplicar, dividir} from './operaciones.js'
 const operacion = document.getElementById("operacion")
 const cero = document.getElementById("cero")
 const uno = document.getElementById("uno")
@@ -11,7 +11,24 @@ const siete = document.getElementById("siete")
 const ocho = document.getElementById("ocho")
 const nueve = document.getElementById("nueve")
 const mas = document.getElementById("mas")
+const menos = document.getElementById("menos")
+const por = document.getElementById("por")
+const entre = document.getElementById("entre")
 const igual = document.getElementById("igual")
+const total = document.getElementById("total")
+const borra = document.getElementById("borra")
+const borraT = document.getElementById("borraT")
+
+borraT.addEventListener("click", () => {
+    operacion.innerHTML = ""
+    total.innerHTML = ""
+})
+
+borra.addEventListener("click", () => {
+    let actual = operacion.innerHTML
+    let nuevo = actual.slice(0, -1)
+    operacion.innerHTML = nuevo
+})
 
 cero.addEventListener("click", () => {
     let actual = operacion.innerHTML
@@ -79,15 +96,57 @@ mas.addEventListener("click", () => {
     operacion.innerHTML = actual
 })
 
+menos.addEventListener("click", () => {
+    let actual = operacion.innerHTML
+    actual += "-"
+    operacion.innerHTML = actual
+})
+
+por.addEventListener("click", () => {
+    let actual = operacion.innerHTML
+    actual += "*"
+    operacion.innerHTML = actual
+})
+
+entre.addEventListener("click", () => {
+    let actual = operacion.innerHTML
+    actual += "/"
+    operacion.innerHTML = actual
+})
+
 igual.addEventListener("click", () => {
     let oper = operacion.innerHTML
     let operA = [...oper]
     let num1 = 0
+    let num2 = 0
+    let operador = ""
+    let resultado = 0
     operA.forEach(valor => {
-        while(valor !== "+") {
-            num1 += valor
+        if(valor === "+" || valor === "-" || valor === "*" || valor === "/"){
+            indiceV = operA.indexOf(valor)
+            operador = valor
         }
-        
     })
-    console.log(num1)
+    let numeros = oper.split(operador)
+    num1 = parseInt(numeros[0])
+    num2 = parseInt(numeros[1])
+
+    switch(operador) {
+        case "+":
+            resultado = num1 + num2
+            break
+        case "-":
+            resultado = num1 - num2
+            break
+        case "*":
+            resultado = num1 * num2
+            break
+        case "/":
+            resultado = num1 / num2
+            break
+        default:
+            alert("algo malo paso :v")
+    }
+
+    total.innerHTML = resultado
 })
