@@ -10,25 +10,33 @@
 <body>
     <div class="contenedor">
         <div class="calcu">
-            <textarea name="operacion" id="operacion" rows="1" readonly></textarea>
-            <textarea name="total" id="total" rows="1" readonly></textarea>
-            <button id="uno" class="btn-num">1</button>
-            <button id="dos" class="btn-num">2</button>
-            <button id="tres" class="btn-num">3</button>
-            <button id="cuatro" class="btn-num">4</button>
-            <button id="cinco" class="btn-num">5</button>
-            <button id="seis" class="btn-num">6</button>
-            <button id="siete" class="btn-num">7</button>
-            <button id="ocho" class="btn-num">8</button>
-            <button id="nueve" class="btn-num">9</button>
-            <button id="cero" class="btn-num">0</button>
-            <button id="mas" class="btn-op">+</button>
-            <button id="menos" class="btn-op">-</button>
-            <button id="por" class="btn-op">x</button>
-            <button id="entre" class="btn-op">/</button>
-            <button id="igual" class="btn-igual">=</button>
-            <button id="borra" class="btn-borra">B</button>
-            <button id="borraT" class="btn-borraT">BT</button>
+            <section class="display">
+                <textarea name="operacion" id="operacion" rows="1" readonly></textarea>
+                <textarea name="total" id="total" rows="1" readonly></textarea>
+            </section>
+            <section class="botones">
+                <div class="numeros">
+                    <button id="siete" class="btn-num">7</button>
+                    <button id="ocho" class="btn-num">8</button>
+                    <button id="nueve" class="btn-num">9</button>
+                    <button id="cuatro" class="btn-num">4</button>
+                    <button id="cinco" class="btn-num">5</button>
+                    <button id="seis" class="btn-num">6</button>
+                    <button id="uno" class="btn-num">1</button>
+                    <button id="dos" class="btn-num">2</button>
+                    <button id="tres" class="btn-num">3</button>
+                    <button id="cero" class="btn-num">0</button>
+                </div>
+                <div class="operadores">
+                    <button id="borra" class="btn-borra">B</button>
+                    <button id="borraT" class="btn-borraT">L</button>
+                    <button id="mas" class="btn-op">+</button>
+                    <button id="menos" class="btn-op">-</button>
+                    <button id="por" class="btn-op">x</button>
+                    <button id="entre" class="btn-op">/</button>
+                    <button id="igual" class="btn-igual">=</button>
+                </div>
+            </section>
         </div>
     </div>
 </body>

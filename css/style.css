@@ -22,12 +22,46 @@ body {
   padding: 1.5rem;
   border-radius: 2rem;
 }
+.contenedor .calcu .display {
+  background-color: rgb(48, 100, 160);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 20px 8px rgb(123, 204, 177);
+}
+.contenedor .calcu .display textarea {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(123, 204, 177);
+  padding: 0 0.5rem;
+}
+.contenedor .calcu .botones {
+  margin: 1.6rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.contenedor .calcu .botones .numeros {
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.contenedor .calcu .botones .operadores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
 
 .btn-num {
   border-radius: 2rem;
   padding: 1.6rem;
   font-size: 1.5rem;
   font-weight: 800;
+  border: none;
   background-color: antiquewhite;
 }
 .btn-num:hover {
@@ -40,6 +74,7 @@ body {
   padding: 1.6rem;
   font-size: 1.5rem;
   font-weight: 800;
+  border: none;
   background-color: cadetblue;
 }
 .btn-op:hover {
@@ -49,7 +84,8 @@ body {
 
 .btn-igual {
   border-radius: 2rem;
-  padding: 3.2rem 1.6rem;
+  border: none;
+  padding: 1.6rem 3.2rem;
   font-size: 1.5rem;
   font-weight: 800;
   background-color: crimson;
@@ -72,6 +108,34 @@ body {
   width: 100%;
   font-size: 2rem;
   resize: none;
+}
+
+.btn-borra {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: none;
+  font-size: 1rem;
+  background-color: red;
+}
+.btn-borra:hover {
+  cursor: pointer;
+  background-color: darkred;
+}
+
+.btn-borraT {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: none;
+  font-size: 1rem;
+  background-color: blue;
+}
+.btn-borraT:hover {
+  cursor: pointer;
+  background-color: darkblue;
 }
 
 /*# sourceMappingURL=style.css.map */

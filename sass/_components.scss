@@ -3,6 +3,7 @@
     padding: 1.6rem;
     font-size: 1.5rem;
     font-weight: 800;
+    border: none;
 }
 
 .btn-num {
@@ -27,7 +28,8 @@
 
 .btn-igual {
     border-radius: 2rem;
-    padding: 3.2rem 1.6rem;
+    border: none;
+    padding: 1.6rem 3.2rem;
     font-size: 1.5rem;
     font-weight: 800;
     background-color: crimson;
@@ -51,4 +53,26 @@
     width: 100%;
     font-size: 2rem;
     resize: none;
+}
+
+.btn-borra {
+    @include boton();
+    font-size: 1rem;
+    background-color: red;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darkred;
+    }
+}
+
+.btn-borraT {
+    @include boton();
+    font-size: 1rem;
+    background-color: blue;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darkblue;
+    }
 }

@@ -21,5 +21,43 @@ body {
         height: 35rem;
         padding: 1.5rem;
         border-radius: 2rem;
+
+        .display {
+            background-color: rgb(48, 100, 160);
+            border-radius: .4rem;
+            box-shadow: 0 0 20px 8px rgb(123, 204, 177);
+            
+            textarea {
+                background: none;
+                border: none;
+                outline: none;
+                color: rgb(123, 204, 177);
+                padding: 0 .5rem;
+            }
+        }
+
+        .botones {
+            margin: 1.6rem 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+
+            .numeros {
+                grid-column: 1 / 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: .6rem;
+            }
+
+            .operadores {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: .6rem;
+            }
+        }
     }
 }
